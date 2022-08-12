@@ -4,8 +4,8 @@ import { Intro } from './components/Intro/Intro';
 function App() {
   return (
     <div className="App"> 
-        <Header/>
-       <Intro/>
+      <Header/>
+      <Intro/>
       
     
     </div>
