@@ -62,11 +62,11 @@ const HeaderStyle = styled.div`
 export const Header = () => {
   return (
     <HeaderStyle>
-      <header class="main-header">
-        <img class="header-logo" src="Logo.png" alt="Logo store"></img>
-        <ul class="header-list">
-          <li class="header-list-item">Create NFT</li>
-          <li class="header-list-item">About us </li>
+      <header className="main-header">
+        <img className="header-logo" src="Logo.png" alt="Logo store"></img>
+        <ul className="header-list">
+          <li className="header-list-item">Create NFT</li>
+          <li className="header-list-item">About us </li>
         </ul>
         <input className="search-input" placeholder="Search"></input>
         <Button Width={114} Height={42}>

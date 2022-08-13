@@ -88,19 +88,13 @@ export const Intro = () => {
           </div>
         </div>
         <div className="contain-right">
-          <img src="devera.png" alt="description"></img>
+          <img src="devera.png" alt="Logo of introduction"></img>
         </div>
       </div>
-      <div class="logo-group">
-        <div className="logo_icon">
-          <img src="icon.svg" alt="description"></img>
-        </div>
-        <div className="logo_devera">
-          <img src="devera-logo.png" alt="description"></img>
-        </div>
-        <div className="logo_lecle">
-          <img height="120" src="lecle.png" alt="description"></img>
-        </div>
+      <div className="logo-group">
+        <img src="icon.svg" alt="Logo of Icon"></img>
+        <img src="devera-logo.png" alt="Logo of Devera"></img>
+        <img height="120" src="lecle.png" alt="Logo of Lecle"></img>
       </div>
     </IntroStyle>
   );
