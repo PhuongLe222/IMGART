@@ -1,10 +1,12 @@
 import styled from "styled-components/macro";
+import { Button } from "../Button";
 
 const HeaderStyle = styled.div`
   header {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 100px;
   }
   .main-header {
     position: absolute;
@@ -25,7 +27,7 @@ const HeaderStyle = styled.div`
     display: flex;
     list-style: none;
     gap: 50px;
-    margin-left: 10%;
+    margin-left: 12%;
   }
   .header-list-item {
     color: #e5e5e5;
@@ -48,26 +50,12 @@ const HeaderStyle = styled.div`
     background: url("search-icon.svg") no-repeat left;
     background-size: 15px;
     background-position: 350px 12px;
-    margin-left: 13%;
+    margin-left: 8%;
   }
 
   .search-input::placeholder {
     padding-left: 7px;
     color: #e5e5e5;
-  }
-
-  .connect-btn {
-    color: #cc5252;
-    background: #f9e7de;
-    border-radius: 5px;
-    width: 114px;
-    height: 42px;
-    border: none;
-    margin-left: 12%;
-  }
-  .connect-btn:hover {
-    opacity: 0.7;
-    cursor: pointer;
   }
 `;
 
@@ -81,7 +69,9 @@ export const Header = () => {
           <li class="header-list-item">About us </li>
         </ul>
         <input className="search-input" placeholder="Search"></input>
-        <button className="connect-btn">Connect</button>
+        <Button Width={114} Height={42}>
+          Connect
+        </Button>
       </header>
     </HeaderStyle>
   );
