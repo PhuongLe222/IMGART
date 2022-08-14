@@ -1,8 +1,14 @@
-import './App.css';
+
+
+import CreateNFT from './containers/CreateNFT';
+
+import { Routes, Route } from 'react-router-dom';
+
 function App() {
   return (
-    <div className="App">
-    </div>
+    <Routes>
+      <Route path='/create' element={<CreateNFT  />} />
+    </Routes>
   );
 }
 
