@@ -1,0 +1,30 @@
+.NFT{
+    display: inline-block;
+    list-style: none;
+    width: 281px;
+    height: 402px;
+    background: #30384D;
+    border-radius: 5px;
+    margin-right: 38px;
+    margin-bottom: 55px;
+}
+
+.NFT-image{
+    width: 217px;
+    height: 223px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.avatar{
+    float: right;
+    margin-right: 37px;
+    margin-top: 18px;
+}
+
+.logo-coin {
+    padding-left: 30px;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+}
