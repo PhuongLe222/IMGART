@@ -1,34 +1,30 @@
 import styled from "styled-components/macro";
 const StyledButton = styled.button`
-
-border-radius: 5px;
-background-color: #F9E7DE;
-border: none;
-margin: 30px;
-color: #CC5252;
-&:hover {
-    background-color: #F3B95F;
-}
-${({Height, Width}) => {
+  border-radius: 5px;
+  background-color: #f9e7de;
+  border: none;
+  margin: 30px;
+  color: #cc5252;
+  &:hover {
+    background-color: #f3b95f;
+  }
+  ${({ Height, Width, bgColor }) => {
     return `
         height: ${Height}px;
         width: ${Width}px;
+        background-color: ${bgColor};
   `;
   }};
 `;
-export const Button = ({
-    Height,
-    Width,
-    children,
-    onClick,
-}) => {
-    return (
-        <StyledButton
-            onClick = {onClick}
-            Height = {Height}
-            Width = {Width}
-        >
-            {children}
-        </StyledButton>
-    );
+export const Button = ({ Height, Width, bgColor, children, onClick }) => {
+  return (
+    <StyledButton
+      onClick={onClick}
+      Height={Height}
+      Width={Width}
+      bgColor={bgColor}
+    >
+      {children}
+    </StyledButton>
+  );
 };

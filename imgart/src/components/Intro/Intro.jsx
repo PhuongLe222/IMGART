@@ -69,8 +69,8 @@ const IntroStyle = styled.div`
     align-items: center;
     gap: 35px;
     margin-left: 30%;
-    margin-top: 76px;
-    margin-bottom: 73px;
+    margin-top: 60px;
+    margin-bottom: -5px;
   }
 `;
 
