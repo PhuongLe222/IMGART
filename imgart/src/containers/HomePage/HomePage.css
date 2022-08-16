@@ -1,7 +1,7 @@
+
 .content-container-1 {
     width: 100%;
-    display: flex;
-    
+    display: flex;    
     flex-direction: column;   
     padding-top: 30px;
     border-top: 1px solid #30384D;
@@ -10,7 +10,7 @@
   .content-title {
     width: 220px;
     height: 41px;
-    margin-left: 110px;  
+    margin-left: 10%;  
     font-weight: 500;
     font-size: 30px;
     font-weight: 700;
@@ -22,20 +22,28 @@
   .select-btn-list {
     display: flex;  
     align-items: center;
-    margin-left: 8%;  
+    margin-left: 19%; 
+    margin-bottom: 2%; 
+  
+  }
+  .NFT-group {
+    display: grid;
+    grid-template-columns: 380px 380px 380px;    
+    row-gap: 0.5px;
+    margin-left: 16%;
   
   }
   .page-btn-group {
-    margin-top: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 23px;
+    margin-bottom: 30px;
   }
   
   .page-btn-item {
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     border:  2px solid #406CA1;;
     border-radius: 4px;
     display: flex;
