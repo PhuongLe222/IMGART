@@ -1,3 +1,7 @@
+.CreateNFT {
+    text-align: center;
+}
+
 .Title {
     width: 578px;
     height: 62px;
@@ -6,6 +10,93 @@
     font-weight: 400;
     font-size: 50px;
     line-height: 62px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 30px;
+}
 
-    color: #E5E5E5;
+.tLabel {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25.1042px;
+    line-height: 20px;
+    /* or 80% */
+    padding: 40px;
+    letter-spacing: 0.753125px;
+    display: inline-block;
+    color: #002B5B;
+    width: 70px;
+}
+
+input {
+    box-sizing: border-box;
+    display: inline;
+    flex-direction: row;
+    align-items: center;
+    padding: 18.5904px 14.8723px;
+    gap: 14.87px;
+    width: 525.18px;
+    height: 60.18px;
+    background: #EDFBFF;
+    /* Grayscale/Line */
+    margin: 20px;
+    border: 0.929521px solid #353242;
+    border-radius: 5px;
+    color: rgb(28, 8, 85);
+    font-size: 20px;
+    font-family: monospace;
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.imageUpload {
+    margin-top: 20px;
+    padding: 7.5px 0;
+
+}
+
+.fileInfomation {
+    margin-top: 20px;
+}
+
+.imgFrame {
+    box-sizing: border-box;
+    width: 543.25px;
+    height: 386.68px;
+    margin: 30px auto;
+    background: rgba(241, 246, 251, 0.8);
+    border-radius: 4.32527px;
+    padding: 30px;
+}
+
+.imagePreview {
+    max-width: 100%;
+    max-height: 350px;
+    vertical-align: middle;
+}
+
+#imageUploadInputBtn {
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    width: 122.51px;
+    height: 50.21px;
+    background: #EDFBFF;
+    border: 1px solid #353242;
+    border-radius: 4px;
+    color: red;
+    font-family: monospace;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#imageUploadInput {
+    display: none;
 }
