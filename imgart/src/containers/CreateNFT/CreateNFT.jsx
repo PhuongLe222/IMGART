@@ -67,7 +67,10 @@ const CreateNFT = () => {
                  </div>
                 <div class="imageUpload">
                   <input type="file" id="imageUploadInput" accept=".jpg,.png" onChange={changeHandler}></input>
-                  <span class="button" id="imageUploadInputBtn" onClick={LoadImg}> <FiFolder style={{verticalAlign: "top", marginRight: "10px"}}/>Upload</span>                   
+                  <span class="button" id="imageUploadInputBtn" onClick={LoadImg}> 
+                    <FiFolder style={{verticalAlign: "top", marginRight: "10px"}}/>
+                    Upload
+                  </span>                   
                 </div>
                 <div id="uploadFileStatus"></div>
           </div>
