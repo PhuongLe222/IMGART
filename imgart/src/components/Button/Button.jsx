@@ -7,17 +7,26 @@ const StyledButton = styled.button`
   &:hover {
     background-color: #f3b95f;
   }
-  ${({ Height, Width, Margin }) => {
+  ${({ Height, Width, Margin, FontFamily, FontSize }) => {
     return `
         height: ${Height}px;
         width: ${Width}px;
         margin: ${Margin};
+        font-family: ${FontFamily};
+        font-size: ${FontSize};
   `;
   }};
 `;
-export const Button = ({ Height, Width, children, onClick, Margin }) => {
+export const Button = ({ Height, Width, children, onClick, Margin, FontFamily, FontSize }) => {
   return (
-    <StyledButton onClick={onClick} Height={Height} Width={Width} Margin={Margin}>
+    <StyledButton 
+      onClick={onClick} 
+      Height={Height} 
+      Width={Width} 
+      Margin={Margin} 
+      FontFamily={FontFamily} 
+      FontSize={FontSize}
+    >
       {children}
     </StyledButton>
   );
