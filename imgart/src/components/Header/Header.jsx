@@ -10,7 +10,7 @@ const HeaderStyle = styled.div`
   }
   .main-header {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 6.65vw; /* 102.23px */
     left: 0%;
     top: -0.32vw; /* -5px */
