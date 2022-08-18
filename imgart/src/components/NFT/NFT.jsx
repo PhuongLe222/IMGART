@@ -34,7 +34,7 @@ export const NFT = ({ src, name, avt, author, price }) => {
         Created by {author}{" "}
       </P>
       <span>
-        <img class="logo-coin" src="Ellipse 6.svg" alt="logo IconX"></img>
+        <img class="logo-coin" src="Ellipse 6.png" alt="logo IconX"></img>
         <span>
           <P FSize={16} PLeft={0} Display={"inline"} Valign={"super"}>
             {" "}

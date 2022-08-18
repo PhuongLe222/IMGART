@@ -16,11 +16,6 @@ const Footerstyle = styled.div`
     gap: 7px;
     align-items: center;
   }
-  @media only screen and (max-width: 992px) {
-    .main-footer {
-      display: block;
-    }
-  }
   .title-footer {
     font-family: "Space Grotesk";
     font-style: normal;
