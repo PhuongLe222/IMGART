@@ -1,5 +1,3 @@
-
-
 import CreateNFT from './containers/CreateNFT';
 
 import { Routes, Route } from 'react-router-dom';

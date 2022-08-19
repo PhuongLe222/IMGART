@@ -4,6 +4,8 @@ import {useState} from "react";
 import { useSelector } from "react-redux";
 import { Form, Field } from "react-final-form";
 import { Button } from "../../components/Button";
+import { PrimaryLayout } from "../../components/Layout";
+import image from '../../asset/image.png';
 import "./CreateNFT.css";
 const CreateNFT = () => {
     // const userState = useSelector((state) => state.userInfo); // lấy data từ store ra sài
@@ -13,6 +15,7 @@ const CreateNFT = () => {
   const onSubmit = async (values) => {
     await sleep(300);
     window.alert(JSON.stringify(values, 0, 2));
+    
   };
 
   
@@ -30,6 +33,7 @@ const CreateNFT = () => {
  
 
     return (
+      <PrimaryLayout>
         <div className="CreateNFT">
             
             <span className="Title">Create NFT</span>
@@ -52,14 +56,14 @@ const CreateNFT = () => {
         <form onSubmit={handleSubmit}>
           <Field name="productImg">
             {({ input, meta }) => (
-                <div class="container imageUploadContainer">
+                <div class="imageUploadContainer">
                 <div className="imgFrame">
                   {isSelected ? (
                     <img src={URL.createObjectURL(selectedFile)} alt="upload img" className="imagePreview"></img>
                     
                   ) : (
                     <img 
-                          src="logo512.png" 
+                          src={image} 
                           alt="Ảnh xem trước" 
                           className="imagePreview">
                       </img>
@@ -106,6 +110,7 @@ const CreateNFT = () => {
             
             
         </div>
+    </PrimaryLayout>
     );
   };
   
