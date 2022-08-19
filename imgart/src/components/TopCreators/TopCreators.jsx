@@ -4,7 +4,7 @@ const StyledP = styled.p`
     color: #FFFFFF;
     font-family: DM Mono;
     text-align: left;
-${({ Fsize, Display, Valign}) => {
+    ${({ Fsize, Display, Valign}) => {
     return `
         font-size: ${Fsize}px;
         display: ${Display};

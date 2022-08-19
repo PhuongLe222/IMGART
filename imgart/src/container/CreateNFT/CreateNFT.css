@@ -1,10 +1,106 @@
-.title{
-    padding-top: 104px;
-    padding-left: 236px;
+.left,
+.right {
+    height: 1035px;
+}
+
+.left {
+    float: left;
+    width: 75%;
+    background-color: #8BB6E0;
+}
+
+.right {
+    float: right;
+    width: 25%;
+    background-color: #FFFFFF;
+}
+
+/* @media only screen and (max-width: 768px) {
+
+    .left,
+    .right {
+        float: none;
+        width: 100%;
+    }
+} */
+
+.title {
+    margin-top: 104px;
+    margin-left: 450px;
     font-family: 'Sniglet';
-    font-style: normal;
     font-weight: 400;
     font-size: 50px;
     line-height: 62px;
-    color: #ffffff;
+    color: #FFFFFF;
+}
+
+.upload {
+    width: 559px;
+    height: 543px;
+    background: rgba(48, 35, 52, 0.5);
+    border-radius: 3.88734px;
+    margin-top: 50px;
+    margin-left: 420px;
+}
+
+.picture {
+    width: 407.39px;
+    height: 293.88px;
+    margin-top: 30.32px;
+    margin-left: 76px;
+}
+
+.textUpload {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34.9861px;
+    line-height: 46px;
+    color: #FFFFFF;
+    margin-top: 22.5px;
+    margin-left: 216.92px;
+}
+
+.framedes {
+    width: 300px;
+    height: 90px;
+    margin-left: 130px;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+
+.desUpload {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23.3241px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn-connect {
+    margin-left: 530px;
+    margin-top: 80px;
+}
+
+.title-TopCreators {
+    margin-top: 55px;
+    margin-left: 46px;
+    font-family: 'Sniglet';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35.1737px;
+    line-height: 44px;
+    color: #406CA1;
+}
+
+.list-TopCreators {
+    margin-top: 40px;
+    margin-left: 6px;
+    list-style: none;
+}
+
+.btn-watchMore {
+    padding-left: 80px;
 }
