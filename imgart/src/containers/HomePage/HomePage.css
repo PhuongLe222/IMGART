@@ -1,4 +1,59 @@
 
+.content-container {
+  display: flex;
+}
+.contain-info {
+  float: left;
+  width: 50%;
+  margin-top: 10%;
+}
+
+.contain-title {
+  position: absolute;
+  width: 600px;
+  height: 329px;
+  left: 208px;
+  top: 179px;
+
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  line-height: 120px;
+  color: white;
+}
+
+.contain-des {
+  position: absolute;
+  width: 720px;
+  height: 90px;
+  left: 213px;
+  top: 545px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  color: #e5e5e5;
+}
+.contain-image {
+  float: right;
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 18%;
+}
+
+.logo-group {
+  width: 1005px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 35px;
+  margin-left: 30%;
+  margin-top: 60px;
+  margin-bottom: -5px;
+}
 .content-container-1 {
     width: 100%;
     display: flex;    
@@ -84,5 +139,8 @@
   .page-btn-item:hover i {
     color: #EBEDFF;
   }
+
+  
+  
   
   

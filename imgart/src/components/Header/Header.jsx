@@ -1,5 +1,6 @@
 import styled from "styled-components/macro";
 import { Button } from "../Button";
+import { Link } from "react-router-dom";
 
 const HeaderStyle = styled.div`
   header {
@@ -62,6 +63,9 @@ const HeaderStyle = styled.div`
     color: #e5e5e5;
     font-size: 0.8vw;
   }
+  a {
+    text-decoration: none;
+  }
 `;
 
 export const Header = () => {
@@ -70,7 +74,9 @@ export const Header = () => {
       <header className="main-header">
         <img className="header-logo" src="Logo.png" alt="Logo store"></img>
         <ul className="header-list">
-          <li className="header-list-item">Create NFT</li>
+          <Link to="/create-NFT">
+            <li className="header-list-item">Create NFT</li>
+          </Link>
           <li className="header-list-item">About us </li>
         </ul>
         <input className="search-input" placeholder="Search"></input>
