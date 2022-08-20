@@ -19,7 +19,7 @@ const StyledButton = styled.button`
   `;
   }};
 `;
-export const Button = ({ Height, Width, children, onClick, Margin, FontFamily, FontSize }) => {
+export const Button = ({ Height, Width, children, onClick, Margin, FontFamily, FSize, FWeight, lineHeight }) => {
   return (
     <StyledButton 
       onClick={onClick} 
@@ -27,7 +27,9 @@ export const Button = ({ Height, Width, children, onClick, Margin, FontFamily, F
       Width={Width} 
       Margin={Margin} 
       FontFamily={FontFamily} 
-      FontSize={FontSize}
+      FSize={FSize}
+      FWeight={FWeight}
+      lineHeight={lineHeight}
     >
       {children}
     </StyledButton>
