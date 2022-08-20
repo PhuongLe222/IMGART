@@ -9,8 +9,8 @@ const StyledButton = styled.button`
   }
   ${({ Height, Width, Margin, FontFamily, FSize, lineHeight, FWeight }) => {
     return `
-        height: ${Height}px;
-        width: ${Width}px;
+        height: ${Height};
+        width: ${Width};
         margin: ${Margin};
         font-family: ${FontFamily};
         font-size: ${FSize};
