@@ -127,6 +127,7 @@ export const signTx = async (transaction) => {
         if (type === 'RESPONSE_JSON-RPC') {
           resolve(payload);
           console.log('Done');
+          alert('Buy successfully')
         }
       },
       { once: true }

@@ -2,7 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { Button } from "../../components/Button/Button";
 import { NFT } from "../../components/NFT/NFT";
-import { Footer } from "../../components/Footer";
+import { PrimaryLayout } from "../../components/Layout";
+import { transfer } from "../../sdk/iconSDK";
+import { Builder } from "icon-sdk-js";
+import { hashShortener } from "../../sdk/iconSDK";
+import { Link } from "react-router-dom";
 
 const ProductDetailsStyle = styled.div`
   background-color: #8bb6e0;
@@ -124,85 +128,102 @@ const ProductDetailsStyle = styled.div`
 `;
 
 const ProductDetails = ({ src, name, author, avt, price }) => {
+  const sendToken = (price) => {
+    const priceImage = document.getElementById("price-img").textContent;
+    transfer({
+      to: "hx25178aea97711c063d5501820c9713db263e1b12",
+      value: priceImage,
+    });
+  };
+  const onSubmit = async (price) => {
+    sendToken(price);
+  };
   return (
-    <ProductDetailsStyle>
-      <div className="container">
-        <div className="container-left">
-          <img className="image-NFT" src={src} alt="NFT"></img>
-        </div>
-        <div className="container-right">
-          <div className="product-detail">
-            <p className="product-name">{name}</p>
-            <p className="product-author">
-              Create by <strong>{author}</strong>
-              <img src={avt} alt="avata"></img>
-            </p>
+    <PrimaryLayout>
+      <ProductDetailsStyle>
+        <div className="container">
+          <div className="container-left">
+            <img className="image-NFT" src={src} alt="NFT"></img>
+          </div>
+          <div className="container-right">
+            <div className="product-detail">
+              <p className="product-name">{name}</p>
+              <p className="product-author">
+                Create by <strong>{hashShortener(author)}</strong>
+                <img src={avt} alt="avata"></img>
+              </p>
 
-            <p className="product-price">
-              {price} ICX{" "}
-              <img
-                className="price-icon"
-                src="Ellipse 6.svg"
-                alt="price icon"
-              ></img>
-            </p>
-            <div className="btn-buy">
-              <Button
-                Height={67}
-                Width={186}
-                fontWeight={400}
-                fontSize={40}
-                lineHeight={50}
-              >
-                BUY
-              </Button>
+              <p className="product-price">
+                <span value="price" id="price-img">
+                  {price}
+                </span>{" "}
+                ICX{" "}
+                <img
+                  className="price-icon"
+                  src="Ellipse 6.svg"
+                  alt="price icon"
+                ></img>
+              </p>
+              <div className="btn-buy">
+                <Button
+                  Height={67}
+                  Width={186}
+                  fontWeight={400}
+                  fontSize={40}
+                  lineHeight={50}
+                  onClick={onSubmit}
+                >
+                  BUY
+                </Button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div>
-        <hr className="hr-line"></hr>
-      </div>
-      <div className="container">
-        <p className="container-tittle">More from this user</p>
-        <div className="gird-container">
-          {" "}
-          <NFT
-            src={"image.png"}
-            name={"Crazy Apes"}
-            avt={"avt.png"}
-            author={"hx45...250e"}
-            price={"3.90"}
-          ></NFT>{" "}
-          <NFT
-            src={"image.png"}
-            name={"Crazy Apes"}
-            avt={"avt.png"}
-            author={"hx45...250e"}
-            price={"3.90"}
-          ></NFT>{" "}
-          <NFT
-            src={"image.png"}
-            name={"Crazy Apes"}
-            avt={"avt.png"}
-            author={"hx45...250e"}
-            price={"3.90"}
-          ></NFT>{" "}
+        <div>
+          <hr className="hr-line"></hr>
         </div>
-        <div className="btn-watchmore">
-          <Button
-            Width={157}
-            Height={51}
-            fontSize={20}
-            fontWeight={700}
-            lineHeight={30}
-          >
-            Watch More
-          </Button>
+        <div className="container">
+          <p className="container-tittle">More from this user</p>
+          <div className="gird-container">
+            {" "}
+            <Link to="/">
+              <NFT
+                src={"image.png"}
+                name={"Crazy Apes"}
+                avt={"avt.png"}
+                author={"hx45...250e"}
+                price={"3.90"}
+              ></NFT>{" "}
+            </Link>
+            <NFT
+              src={"image.png"}
+              name={"Crazy Apes"}
+              avt={"avt.png"}
+              author={"hx45...250e"}
+              price={"3.90"}
+            ></NFT>{" "}
+            <NFT
+              src={"image.png"}
+              name={"Crazy Apes"}
+              avt={"avt.png"}
+              author={"hx45...250e"}
+              price={"3.90"}
+            ></NFT>{" "}
+          </div>
+          <div className="btn-watchmore">
+            <Button
+              Width={157}
+              Height={51}
+              fontSize={20}
+              fontWeight={700}
+              lineHeight={30}
+            >
+              Watch More
+            </Button>
+          </div>
         </div>
-      </div>
-      <Footer />
-    </ProductDetailsStyle>
+      </ProductDetailsStyle>
+    </PrimaryLayout>
   );
 };
 export default ProductDetails;
