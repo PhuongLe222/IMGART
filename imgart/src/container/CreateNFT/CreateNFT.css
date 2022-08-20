@@ -10,14 +10,20 @@
     float: right;
     width: 25%;
     background-color: #FFFFFF;
-    
+    align-items: center; 
 }
 
 @media only screen and (max-width: 1024px) {
-    .left,
-    .right {
+
+    .left{
         float: none;
         width: 100%;
+    }
+    .right {
+        margin: auto;
+        float: none;
+        width: 480px;
+        padding-bottom: 2%;
     }
 }
 
@@ -78,6 +84,7 @@
 .btn-connect {
     padding-top: 3em;
     margin: auto;
+    margin-bottom: 5%;
 }
 
 .title-TopCreators {
@@ -88,16 +95,18 @@
     font-size: 35.1737px;
     line-height: 44px;
     color: #406CA1;
-    margin-left: 7%;
+    margin-left: 8%;
 }
 
 .list-TopCreators {
-    margin: auto;
+    margin-left: 9%;
     list-style: none;
     width: 86%;
     padding-left: 0;
 }
 
 .btn-watchMore {
-    margin-left: 10%;
+    margin-top: 13%;
+    margin-left:20%;
+    margin-bottom: 27%;
 }
