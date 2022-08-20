@@ -11,7 +11,6 @@ function App() {
       <Route path='/product-detail' ></Route>
       <Route path='/create-NFT' ></Route>
     </Routes>
-
   );
 }
 

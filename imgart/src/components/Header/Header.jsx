@@ -12,19 +12,18 @@ const HeaderStyle = styled.div`
   .main-header {
     position: absolute;
     width: 100%;
-    height: 6.65vw; /* 102.23px */
+    height: auto; /* 102.23px */
     left: 0%;
     top: -0.32vw; /* -5px */
     background: #406ca1;
   }
   .header-logo {
     position: absolute;
-    width: 10%; /* 145.83px */
-    height: 130%; /* 137.56px */
-    left: 2%; /* 37.58px */
-    top: -5%; /* -15.03px */
+    width: 10vw; /* 145.83px */
+    height: 19vh; /* 137.56px */
+    left: 4%; /* 37.58px */
+    top: -7%; /* -15.03px */
   }
-
   .header-list {
     display: flex;
     list-style: none;
@@ -45,10 +44,9 @@ const HeaderStyle = styled.div`
     color: #f2b962;
     cursor: pointer;
   }
-
   .search-input {
-    width: 28%; /* 419.54px */
-    height: 40%; /* 41.34px */
+    width: 25vw; /* 419.54px */
+    height: 5vh; /* 41.34px */
     border: 0.065vw solid #002b5b; /* 1px */
     border-radius: 3px; /* 3px */
     background-color: transparent;
@@ -57,7 +55,6 @@ const HeaderStyle = styled.div`
     background-position: 97% 50%; /* 400px 12px */
     margin-left: 6%;
   }
-
   .search-input::placeholder {
     padding-left: 0.45vw; /* 7px */
     color: #e5e5e5;
