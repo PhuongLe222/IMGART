@@ -1,3 +1,6 @@
+.container{
+    display: flow-root;
+}
 .left {
     float: left;
     width: 75%;
@@ -96,6 +99,7 @@
     line-height: 44px;
     color: #406CA1;
     margin-left: 8%;
+    padding-top: 56px;
 }
 
 .list-TopCreators {
