@@ -6,7 +6,6 @@ import { PrimaryLayout } from "../../components/Layout";
 import { transfer } from "../../sdk/iconSDK";
 import { Builder } from "icon-sdk-js";
 import { hashShortener } from "../../sdk/iconSDK";
-import { Link } from "react-router-dom";
 
 const ProductDetailsStyle = styled.div`
   background-color: #8bb6e0;
@@ -186,15 +185,13 @@ const ProductDetails = ({ src, name, author, avt, price }) => {
           <p className="container-tittle">More from this user</p>
           <div className="gird-container">
             {" "}
-            <Link to="/">
-              <NFT
-                src={"image.png"}
-                name={"Crazy Apes"}
-                avt={"avt.png"}
-                author={"hx45...250e"}
-                price={"3.90"}
-              ></NFT>{" "}
-            </Link>
+            <NFT
+              src={"image.png"}
+              name={"Crazy Apes"}
+              avt={"avt.png"}
+              author={"hx45...250e"}
+              price={"3.90"}
+            ></NFT>{" "}
             <NFT
               src={"image.png"}
               name={"Crazy Apes"}
