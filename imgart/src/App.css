@@ -1,6 +1,6 @@
 .App {}
-
-
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+@import url('https://fonts.googleapis.com/css?family=DM+Mono');
 .App-logo {
   height: 40vmin;
   pointer-events: none;

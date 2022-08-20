@@ -1,7 +1,35 @@
 import "./CreateNFT.css";
 import { Button } from "../../components/Button/Button";
 import { TopCreator } from "../../components/TopCreators/TopCreators";
+
 const CreateNFT = () => {
+  let NFTitem = [
+    {
+      src: "image 3.png",
+      author: "hx4568...42b35e",
+      price: "19,400.50",
+    },
+    {
+      src: "image 3.png",
+      author: "hx4568...42b35e",
+      price: "19,400.50",
+    },
+    {
+      src: "image 3.png",
+      author: "hx4568...42b35e",
+      price: "19,400.50",
+    },
+    {
+      src: "image 3.png",
+      author: "hx4568...42b35e",
+      price: "19,400.50",
+    },
+    {
+      src: "image 3.png",
+      author: "hx4568...42b35e",
+      price: "19,400.50",
+    },
+  ];
   return (
     <div>
       <div className="left">
@@ -26,41 +54,15 @@ const CreateNFT = () => {
       <div className="right">
         <p className="title-TopCreators">Top Creators of the week</p>
         <ul className="list-TopCreators">
-          <li>
-            <TopCreator
-              src={"image 3.png"}
-              author={"hx4568...42b35e"}
-              price={"19,400.50"}
-            ></TopCreator>
-          </li>
-          <li>
-            <TopCreator
-              src={"image 3.png"}
-              author={"hx4568...42b35e"}
-              price={"19,400.50"}
-            ></TopCreator>
-          </li>
-          <li>
-            <TopCreator
-              src={"image 3.png"}
-              author={"hx4568...42b35e"}
-              price={"19,400.50"}
-            ></TopCreator>
-          </li>
-          <li>
-            <TopCreator
-              src={"image 3.png"}
-              author={"hx4568...42b35e"}
-              price={"19,400.50"}
-            ></TopCreator>
-          </li>
-          <li>
-            <TopCreator
-              src={"image 3.png"}
-              author={"hx4568...42b35e"}
-              price={"19,400.50"}
-            ></TopCreator>
-          </li>
+          {NFTitem.map((item) => (
+            <li>
+              <TopCreator
+                src={item.src}
+                author={item.author}
+                price={item.price}
+              ></TopCreator>
+            </li>
+          ))}
         </ul>
         <div className="btn-watchMore">
           <Button Height={61} Width={260} Fsize={25}>
