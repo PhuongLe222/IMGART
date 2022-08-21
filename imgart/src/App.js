@@ -1,12 +1,17 @@
 import './App.css';
-import { PrimaryLayout } from './components/Layout';
 import { Routes, Route } from 'react-router-dom'
 import ProductDetails from './containers/ProductDetails/ProductDetails';
+import { Helmet } from 'react-helmet'
 function App() {
   return (
-    <Routes>  
-      <Route path='/productdetails' element={<ProductDetails src = {"image 4.svg"} name ={"Crazy Apes"} author ={"hx25178aea97711c063d5501820c9713db263e1b12"} avt={"avt.png"} price={"1.2"} />} />
-    </Routes>
+    <>
+      <Helmet>
+        <title>IMGART STORE</title>
+      </Helmet>
+      <Routes>  
+        <Route path='/productdetails' element={<ProductDetails src = {"image 4.svg"} name ={"Crazy Apes"} author ={"hx25178aea97711c063d5501820c9713db263e1b12"} avt={"avt.png"} price={"1.2"} />} />
+      </Routes>
+    </>
   );
 }
 

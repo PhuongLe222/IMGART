@@ -31,7 +31,7 @@ const ProductDetailsStyle = styled.div`
     }
   }
   .image-NFT {
-    width: auto;
+    width: 35vw;
     height: 33vw;
   }
   .product-detail {
@@ -58,7 +58,7 @@ const ProductDetailsStyle = styled.div`
     font-weight: 400;
     font-size: 3vw;
     line-height: 51px;
-    margin-left: 6.5vw;
+    margin-left: 6vw;
   }
   .product-author img {
     padding-left: 10px;
@@ -73,7 +73,7 @@ const ProductDetailsStyle = styled.div`
     width: 4vw;
     max-width: 47px;
     height: auto;
-    margin-left: -25vw;
+    margin-left: -30vw;
     vertical-align: inherit;
   }
   .product-price {
@@ -86,7 +86,7 @@ const ProductDetailsStyle = styled.div`
     margin-bottom: 30px;
   }
   .btn-buy {
-    margin-left: 19vw;
+    margin-left: 18vw;
   }
   @media only screen and (max-width: 992px) {
     .btn-watchmore {
@@ -157,7 +157,7 @@ const ProductDetails = ({ src, name, author, avt, price }) => {
                 <img src={avt} alt="avata"></img>
               </p>
 
-              <p className="product-price">
+              <p className="product-price" style={{ fontFamily: "DM Mono" }}>
                 <span value="price" id="price-img">
                   {price}
                 </span>{" "}
