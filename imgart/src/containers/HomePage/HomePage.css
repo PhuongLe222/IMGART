@@ -51,12 +51,12 @@
 
 
 .logo-group {
-  width: 65%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 35px;
-  margin-left: 25%;
+  gap: 32px;
+  margin-left: 40%;
   margin-bottom: -5px;
 }
 .content-container-1 {
@@ -80,24 +80,36 @@
   }
   
   .select-btn-list {
-    display: flex;  
+    /* display: flex;  
     align-items: center;
-    margin-left: 17%; 
+    margin-left: 14.5%; 
     margin-bottom: 2%; 
+   */
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 155px);
+   grid-template-rows: repeat(2, 50px);
+   align-items: center;
+   margin-left: 16%; 
+   margin-top: 2%;
+   margin-bottom: 1%; 
   
   }
   .NFT-group {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 380px 380px 380px;    
     row-gap: 0.5px;
-    margin-left: 16%;
+    margin-left: 16%; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(2, 450px);
+    margin-left: 12%;
   
   }
   .page-btn-group {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 23px;
+    gap: 18px;
     margin-bottom: 30px;
   }
   

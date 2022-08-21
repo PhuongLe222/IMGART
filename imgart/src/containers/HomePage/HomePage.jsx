@@ -101,7 +101,6 @@ const SuperHot = () => {
           <Button
             Width={80}
             Height={39}
-            Margin={10}
             bgColor={tab === "music" ? "#FFE4B5" : "#f9e7de"}
             onClick={() => {
               setTab("music");
@@ -110,9 +109,8 @@ const SuperHot = () => {
             Music
           </Button>
           <Button
-            Width={70}
+            Width={80}
             Height={39}
-            Margin={10}
             bgColor={tab === "art" ? "#FFE4B5" : "#f9e7de"}
             onClick={() => {
               setTab("art");
@@ -123,7 +121,6 @@ const SuperHot = () => {
           <Button
             Width={80}
             Height={39}
-            Margin={10}
             bgColor={tab === "sport" ? "#FFE4B5" : "#f9e7de"}
             onClick={() => {
               setTab("sport");
@@ -132,9 +129,8 @@ const SuperHot = () => {
             Sport
           </Button>
           <Button
-            Width={125}
+            Width={100}
             Height={39}
-            Margin={10}
             bgColor={tab === "photography" ? "#FFE4B5" : "#f9e7de"}
             onClick={() => {
               setTab("photography");
@@ -143,9 +139,8 @@ const SuperHot = () => {
             Photography
           </Button>
           <Button
-            Width={145}
+            Width={110}
             Height={39}
-            Margin={10}
             bgColor={tab === "virtual reality" ? "#FFE4B5" : "#f9e7de"}
             onClick={() => {
               setTab("virtual reality");
@@ -156,7 +151,6 @@ const SuperHot = () => {
           <Button
             Width={80}
             Height={39}
-            Margin={10}
             bgColor={tab === "videos" ? "#FFE4B5" : "#f9e7de"}
             onClick={() => {
               setTab("videos");
@@ -167,7 +161,6 @@ const SuperHot = () => {
           <Button
             Width={80}
             Height={39}
-            Margin={10}
             bgColor={tab === "more" ? "#FFE4B5" : "#f9e7de"}
             onClick={() => {
               setTab("more");
