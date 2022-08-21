@@ -74,7 +74,7 @@ const ProductDetailsStyle = styled.div`
     max-width: 47px;
     height: auto;
     margin-left: -25vw;
-    vertical-align: sub;
+    vertical-align: inherit;
   }
   .product-price {
     display: block;

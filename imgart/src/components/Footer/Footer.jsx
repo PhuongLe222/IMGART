@@ -14,6 +14,11 @@ const Footerstyle = styled.div`
       display: block;
     }
   }
+  @media only screen and (max-width: 992px) {
+    .main-footer-item {
+      align-items: center !important;
+    }
+  }
   .main-footer-item {
     display: flex;
     justify-content: center;
