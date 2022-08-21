@@ -23,7 +23,7 @@ const ProductDetailsStyle = styled.div`
     float: right;
     width: 60%;
   }
-  @media only screen and (max-width: 992px) {
+  @media only screen and (max-width: 768px) {
     .container-left,
     .container-right {
       float: none;
@@ -31,14 +31,15 @@ const ProductDetailsStyle = styled.div`
     }
   }
   .image-NFT {
-    width: 430px;
-    height: 440px;
+    width: auto;
+    height: 33vw;
   }
   .product-detail {
     background-color: #c3d3d4;
     margin-right: 80px;
-    height: 440px;
-    width: 650px;
+    width: 50vw;
+    height: auto;
+    /* height: 33vw; */
   }
   .product-detail p {
     color: #30384d;
@@ -48,45 +49,49 @@ const ProductDetailsStyle = styled.div`
   .product-name {
     font-weight: 700;
     line-height: 102px;
-    font-size: 80px;
-    margin-left: 100px;
+    font-size: 6vw;
+    margin-left: 10vw;
     display: inline;
     margin-bottom: 30px;
   }
   .product-author {
     font-weight: 400;
-    font-size: 40px;
+    font-size: 3vw;
     line-height: 51px;
-    margin-left: 90px;
-    margin-bottom: 30px;
+    margin-left: 6.5vw;
   }
   .product-author img {
     padding-left: 10px;
     display: inline;
     vertical-align: middle;
     width: 100%;
-    max-width: 88px;
+    width: 5vw;
     height: auto;
   }
   .price-icon {
     display: inline-block;
-    width: 100%;
+    width: 4vw;
     max-width: 47px;
     height: auto;
-    margin-left: -280px;
+    margin-left: -25vw;
     vertical-align: sub;
   }
   .product-price {
     display: block;
-    margin-left: 260px;
+    margin-left: 20vw;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 5vw;
     line-height: 65px;
     margin-top: -10px;
     margin-bottom: 30px;
   }
   .btn-buy {
-    margin-left: 240px;
+    margin-left: 19vw;
+  }
+  @media only screen and (max-width: 992px) {
+    .btn-watchmore {
+      margin-left: 27px;
+    }
   }
   .hr-line {
     border: 1px solid rgba(92, 82, 82, 0.21);
@@ -165,12 +170,14 @@ const ProductDetails = ({ src, name, author, avt, price }) => {
               </p>
               <div className="btn-buy">
                 <Button
-                  Height={67}
-                  Width={186}
-                  fontWeight={400}
-                  fontSize={40}
+                  Height={"60px"}
+                  Width={"13vw"}
+                  FSize={"4vw"}
+                  FWeight={400}
                   lineHeight={50}
                   onClick={onSubmit}
+                  FontFamily={"Sniglet"}
+                  Margin={"1.6vw"}
                 >
                   BUY
                 </Button>
@@ -209,11 +216,12 @@ const ProductDetails = ({ src, name, author, avt, price }) => {
           </div>
           <div className="btn-watchmore">
             <Button
-              Width={157}
-              Height={51}
-              fontSize={20}
-              fontWeight={700}
+              Width={"157px"}
+              Height={"51px"}
+              FSize={"20px"}
+              FWeight={700}
               lineHeight={30}
+              FontFamily={"Sniglet"}
             >
               Watch More
             </Button>
