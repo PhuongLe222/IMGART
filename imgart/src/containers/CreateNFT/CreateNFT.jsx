@@ -138,11 +138,11 @@ const CreateNFT = () => {
                           </img>
                       )}
                     </div>
-                    <div class="imgUpload">
+                    <div className="imgUpload">
                       <input type="file" id="imageUploadInput" accept=".jpg,.png" onChange={changeHandler}></input>
-                      <span id="imageUploadInputBtn" onClick={LoadImg}> 
-                        <FiFolder className="folder-icon" style={{verticalAlign: "top", marginRight: "10px"}}/>
-                        Update
+                      <span id="imageUploadInputBtn" onClick={LoadImg}>
+                      <FiFolder className="folder-icon" style={{verticalAlign: "top", marginRight: "10px"}}/>
+                      Update
                       </span>                   
                     </div>
               </div>
@@ -167,7 +167,7 @@ const CreateNFT = () => {
                 )}
               </Field>
               <div className="buttons">
-                <Button Width={"12vw"} Height={"5vw"} FSize={"1.8vw"} Margin={"2% 28%"}FontFamily={"monospace"}>
+                <Button Width={"12vw"} Height={"5vw"} FSize={"1.8vw"} Margin={"2% 23%"}FontFamily={"monospace"}>
                   Create
                 </Button>
               </div>
@@ -190,10 +190,11 @@ const CreateNFT = () => {
             </ul>
             <div className="btn-watchMore">
               <Button
-                Height={61}
-                Width={260}
+                Height={"6vw"}
+                Width={"20vw"}
                 FSize={"25px"}
                 FontFamily={"Sniglet"}
+                Margin={"0 auto"}
               >
                 Watch More
               </Button>

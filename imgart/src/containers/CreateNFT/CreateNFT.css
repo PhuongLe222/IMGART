@@ -4,7 +4,7 @@
 
 .left {
     float: left;
-    width: 75%;
+    width: 70%;
     background-color: #8BB6E0;
     text-align: center;
     align-items: center;
@@ -12,7 +12,8 @@
 
 .right {
     float: right;
-    width: 25%;
+    width: auto;
+    margin-top: 3vw;
     background-color: #FFFFFF;
     align-items: center;
 }
@@ -25,10 +26,11 @@
     }
 
     .right {
-        margin: auto;
+        margin-top: 3vw;
         float: none;
-        width: 480px;
+        width: 100%;
         padding-bottom: 2%;
+        display: block;
     }
 }
 
@@ -94,32 +96,30 @@
 }
 
 .title-TopCreators {
-    display: inline-block;
     font-family: 'Sniglet';
     font-style: normal;
     font-weight: 400;
-    font-size: 35.1737px;
+    font-size: 30px;
     line-height: 44px;
     color: #406CA1;
-    margin-left: 8%;
     padding-top: 56px;
+    text-align: center;
 }
 
 .list-TopCreators {
-    margin-left: 9%;
     list-style: none;
-    width: 86%;
-    padding-left: 0;
+    width: 300px;
+    padding: 0vw 3vw;
+    margin: 0 auto;
 }
 
 .btn-watchMore {
-    margin-top: 13%;
-    margin-left: 20%;
-    margin-bottom: 27%;
+    margin: 4% auto;
+    width: 20vw;
 }
 
 .CreateNewNFT {
-    width: 75%;
+    width: 65%;
     margin-top: 60px;
     display: inline-block;
 }
@@ -147,13 +147,13 @@
     display: inline-block;
     color: #002B5B;
     width: 5%;
-    margin-left: 14%;
+    margin-left: 6vw;
 }
 
 .imagePreview {
     max-width: 100%;
-    max-height: 350px;
-    margin: 10px auto;
+    max-height: 30vw;
+    margin: 4vw auto;
 }
 
 input {
@@ -194,9 +194,9 @@ input {
 
 .imgFrame {
     box-sizing: border-box;
-    width: 45%;
-    height: 45%;
-    margin: 5% auto;
+    width: 35vw;
+    height: 35vw;
+    margin: 5vw auto;
     background: rgba(241, 246, 251, 0.8);
     border-radius: 5px;
     text-align: center;
@@ -217,7 +217,7 @@ input {
     font-family: monospace;
     font-size: 1.5vw;
     cursor: pointer;
-    margin-left: 28%;
+    margin-left: 23%;
     margin-bottom: 2%;
     display: inline-block;
     text-align: center;
@@ -226,6 +226,24 @@ input {
 @media screen and (max-width: 1000px) {
     .folder-icon {
         display: none;
+    }
+
+    .CreateNewNFT {
+        display: block;
+        width: 100%;
+    }
+
+    .tLabel {
+        margin-left: 18vw;
+    }
+
+    #imageUploadInputBtn {
+        margin-left: 31vw;
+    }
+
+    .buttons {
+        margin-left: 11vw;
+        ;
     }
 }
 
