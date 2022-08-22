@@ -11,15 +11,15 @@ const ProductDetailsStyle = styled.div`
   background-color: #8bb6e0;
   .container {
     display: flow-root;
-    margin-left: 80px;
+    margin-left: 5vw;
   }
   .container-left {
-    margin-top: 4vw;
+    margin-top: 3vw;
     float: left;
     width: 40%;
   }
   .container-right {
-    margin-top: 4vw;
+    margin-top: 3vw;
     float: right;
     width: 60%;
   }
@@ -124,10 +124,15 @@ const ProductDetailsStyle = styled.div`
       grid-template-columns: repeat(1, 1fr);
     }
   }
+  @media only screen and (min-width: 1300px) {
+    .gird-container {
+      margin-left: 6vw;
+    }
+  }
   .btn-watchmore {
     display: block;
     margin-bottom: 34px;
-    margin-left: 500px;
+    margin-left: 40vw;
   }
   @media only screen and (max-width: 992px) {
     .btn-watchmore {
