@@ -6,8 +6,6 @@ function App() {
     <Routes>
       <Route path='/about-us' element={<Aboutus/>}/>
     </Routes>
-
   );
 }
-
 export default App;
