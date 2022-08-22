@@ -86,10 +86,10 @@
     margin-bottom: 2%; 
    */
    display: grid;
-   grid-template-columns: repeat(auto-fit, 155px);
+   grid-template-columns: repeat(auto-fit, 145px);
    grid-template-rows: repeat(2, 50px);
    align-items: center;
-   margin-left: 16%; 
+   margin-left: 15%; 
    margin-top: 2%;
    margin-bottom: 1%; 
   

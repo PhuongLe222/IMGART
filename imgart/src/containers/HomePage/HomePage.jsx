@@ -4,17 +4,68 @@ import "./HomePage.css";
 import { Button } from "../../components/Button";
 import { NFT } from "../../components/NFT/NFT";
 import { PrimaryLayout } from "../../components/Layout/Layout";
+import "./dataNFT";
 
 const HomePageStyle = styled.div`
   display: flex;
   flex-direction: column;
 `;
 
+let NFTitem = [
+  {
+    link: "product-detail",
+    src: "NFT1.png",
+    name: "Doodle",
+    avt: "avt.png",
+    author: "0x60...9B38",
+    price: "8.0",
+  },
+  {
+    link: "product-detail",
+    src: "NFT1.png",
+    name: "Doodle",
+    avt: "avt.png",
+    author: "0x60...9B38",
+    price: "8.0",
+  },
+  {
+    link: "product-detail",
+    src: "NFT1.png",
+    name: "Doodle",
+    avt: "avt.png",
+    author: "0x60...9B38",
+    price: "8.0",
+  },
+  {
+    link: "product-detail",
+    src: "NFT1.png",
+    name: "Doodle",
+    avt: "avt.png",
+    author: "0x60...9B38",
+    price: "8.0",
+  },
+  {
+    link: "product-detail",
+    src: "NFT1.png",
+    name: "Doodle",
+    avt: "avt.png",
+    author: "0x60...9B38",
+    price: "8.0",
+  },
+  {
+    link: "product-detail",
+    src: "NFT1.png",
+    name: "Doodle",
+    avt: "avt.png",
+    author: "0x60...9B38",
+    price: "8.0",
+  },
+];
 const NFT_ART = () => {
   return (
     <div>
       <div className="NFT-group">
-        <NFT
+        {/* <NFT
           link={"product-detail"}
           src={"NFT1.png"}
           name={"Doodle"}
@@ -61,7 +112,17 @@ const NFT_ART = () => {
           avt={"avt.png"}
           author={"hx45...250e"}
           price={"3.90"}
-        ></NFT>
+        ></NFT> */}
+        {NFTitem.map((item) => (
+          <NFT
+            link={item.src}
+            src={item.src}
+            name={item.name}
+            avt={item.avt}
+            author={item.author}
+            price={item.price}
+          ></NFT>
+        ))}
       </div>
       <div className="page-btn-group">
         <div className="page-btn-item">
@@ -92,7 +153,7 @@ const NFT_ART = () => {
 
 const SuperHot = () => {
   const [tab, setTab] = useState("art");
-  console.log(tab);
+  // console.log(tab);
   return (
     <div>
       <div className="content-container-1">
