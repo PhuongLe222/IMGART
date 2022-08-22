@@ -41,3 +41,4 @@ export const TopCreator = ({ src, author, price }) => {
     </div>
   );
 };
+

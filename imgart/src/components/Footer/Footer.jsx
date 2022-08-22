@@ -9,6 +9,16 @@ const Footerstyle = styled.div`
     gap: 160px;
     padding-top: 55px;
   }
+  @media only screen and (max-width: 992px) {
+    .main-footer {
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 992px) {
+    .main-footer-item {
+      align-items: center !important;
+    }
+  }
   .main-footer-item {
     display: flex;
     justify-content: center;
