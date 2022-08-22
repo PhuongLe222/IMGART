@@ -14,12 +14,12 @@ const ProductDetailsStyle = styled.div`
     margin-left: 80px;
   }
   .container-left {
-    margin-top: 38px;
+    margin-top: 4vw;
     float: left;
     width: 40%;
   }
   .container-right {
-    margin-top: 38px;
+    margin-top: 4vw;
     float: right;
     width: 60%;
   }
@@ -36,11 +36,16 @@ const ProductDetailsStyle = styled.div`
   }
   .product-detail {
     background-color: #c3d3d4;
-    margin-right: 80px;
     width: 50vw;
     height: auto;
     /* height: 33vw; */
   }
+  @media only screen and (min-width: 1200px) {
+    .product-detail {
+      height: 33vw;
+    }
+  }
+
   .product-detail p {
     color: #30384d;
     font-family: "Space Grotesk", sans-serif;
