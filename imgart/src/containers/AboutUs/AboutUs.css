@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    margin-bottom: 4vw;
+}
+
+.img-logo {
+    width: 20vw;
+    margin-left: 40vw;
+    margin-top: 4vw;
+}
+
+.left-us {
+    float: left;
+    width: 50%;
+}
+
+.right-us {
+    float: right;
+    width: 50%;
+}
+
+.img-us {
+    width: 45vw;
+    border-radius: 3vw;
+    height: 47vw;
+}
+
+.content {
+    background-color: RGB(229, 229, 229);
+    width: 39vw;
+    margin-left: 4vw;
+    height: 47vw;
+    border-radius: 3vw;
+}
+
+.title-us {
+    font-size: 5vw;
+    margin-left: 7.5vw;
+    color: #30384d;
+    padding-top: 2vw;
+}
+
+.hr-line {
+    width: 15vw;
+    margin-top: 1vw;
+    border: 1.5px solid black;
+}
+
+.content-member {
+    font-size: 2vw;
+    margin: 3vw;
+}
+
+.content-member li {
+    padding: 1.2vw;
+}
+
+.logo-contact {
+    display: flex;
+    gap: 4vw;
+    justify-content: center;
+}
+
+.logo-contact img {
+    width: 3vw;
+}

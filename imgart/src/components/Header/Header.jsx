@@ -133,7 +133,7 @@ export const Header = () => {
         <img className="header-logo" src="Logo.png" alt="Logo store" onClick={goHome}></img>
         <ul className="header-list">
             <Link className="header-list-item" to="/create" style={{textDecoration:"none"}}>Create NFT</Link>
-            <Link className="header-list-item" to="/about" style={{textDecoration:"none"}}>About us </Link>
+            <Link className="header-list-item" to="/about-us" style={{textDecoration:"none"}}>About us </Link>
         </ul>
         <input className="search-input" placeholder="Search"></input>
         {address ? (
