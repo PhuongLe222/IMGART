@@ -9,36 +9,34 @@ const StyledButton = styled.button`
     background-color: #f3b95f;
   }
 
-  ${({ Height, Width, Margin, FontFamily, FontSize, bgColor }) => {
+
+  ${({ Height, Width, Margin, FontFamily, FSize, lineHeight, FWeight }) => {
+
     return `
-        height: ${Height}px;
-        width: ${Width}px;
+        height: ${Height};
+        width: ${Width};
         margin: ${Margin};
         font-family: ${FontFamily};
+
+
         font-size: ${FontSize};
         background-color: ${bgColor}
   `;
   }};
 `;
 
-export const Button = ({
-  Height,
-  Width,
-  children,
-  onClick,
-  Margin,
-  FontFamily,
-  FontSize,
-  bgColor,
-}) => {
+
+export const Button = ({ Height, Width, children, onClick, Margin, FontFamily, FSize, FWeight, lineHeight, bgColor }) => {
   return (
-    <StyledButton
-      onClick={onClick}
-      Height={Height}
-      Width={Width}
-      Margin={Margin}
-      FontFamily={FontFamily}
-      FontSize={FontSize}
+    <StyledButton 
+      onClick={onClick} 
+      Height={Height} 
+      Width={Width} 
+      Margin={Margin} 
+      FontFamily={FontFamily} 
+      FSize={FSize}
+      FWeight={FWeight}
+      lineHeight={lineHeight}
       bgColor={bgColor}
     >
       {children}
