@@ -11,7 +11,7 @@ const HomePageStyle = styled.div`
   flex-direction: column;
 `;
 
-let NFTitem = [
+let NFTitem_Art = [
   {
     link: "product-detail",
     src: "NFT1.png",
@@ -65,55 +65,7 @@ const NFT_ART = () => {
   return (
     <div>
       <div className="NFT-group">
-        {/* <NFT
-          link={"product-detail"}
-          src={"NFT1.png"}
-          name={"Doodle"}
-          avt={"avt.png"}
-          author={"0x60...9B38"}
-          price={"8.0"}
-        ></NFT>
-        <NFT
-          link={"product-detail"}
-          src={"NFT2.png"}
-          name={"Small Bro"}
-          avt={"avt.png"}
-          author={"0x27...2cbC"}
-          price={"0.049"}
-        ></NFT>
-        <NFT
-          link={"product-detail"}
-          src={"image.png"}
-          name={"Crazy Apes"}
-          avt={"avt.png"}
-          author={"hx45...250e"}
-          price={"3.90"}
-        ></NFT>
-        <NFT
-          link={"product-detail"}
-          src={"image.png"}
-          name={"Crazy Apes"}
-          avt={"avt.png"}
-          author={"hx45...250e"}
-          price={"3.90"}
-        ></NFT>
-        <NFT
-          link={"product-detail"}
-          src={"image.png"}
-          name={"Crazy Apes"}
-          avt={"avt.png"}
-          author={"hx45...250e"}
-          price={"3.90"}
-        ></NFT>
-        <NFT
-          link={"product-detail"}
-          src={"image.png"}
-          name={"Crazy Apes"}
-          avt={"avt.png"}
-          author={"hx45...250e"}
-          price={"3.90"}
-        ></NFT> */}
-        {NFTitem.map((item) => (
+        {NFTitem_Art.map((item) => (
           <NFT
             link={item.src}
             src={item.src}
