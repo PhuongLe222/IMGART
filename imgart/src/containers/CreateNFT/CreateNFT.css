@@ -1,32 +1,153 @@
-.CreateNFT {
-    text-align: center;
+.container {
+    display: flow-root;
 }
 
-.Title {
-    width: 578px;
-    height: 62px;
+.left {
+    float: left;
+    width: 75%;
+    background-color: #8BB6E0;
+    text-align: center;
+    align-items: center;
+}
+
+.right {
+    float: right;
+    width: 25%;
+    background-color: #FFFFFF;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .left {
+        float: none;
+        width: 100%;
+    }
+
+    .right {
+        margin: auto;
+        float: none;
+        width: 480px;
+        padding-bottom: 2%;
+    }
+}
+
+.title {
+    padding-top: 8%;
+    ;
+    display: inline-block;
+    font-family: 'Sniglet';
+    font-weight: 400;
+    font-size: 3.1em;
+    line-height: 62px;
+    color: #FFFFFF;
+}
+
+.upload {
+    width: 40%;
+    margin: auto;
+    background: rgba(48, 35, 52, 0.5);
+    border-radius: 3.88734px;
+    padding-bottom: 3%;
+}
+
+.picture {
+    width: 70%;
+    height: 50%;
+    padding-top: 7%;
+    margin: auto;
+}
+
+.textUpload {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34.9861px;
+    line-height: 46px;
+    color: #FFFFFF;
+    margin: auto;
+    padding-top: 4%;
+}
+
+.framedes {
+    width: 75%;
+    height: 50%;
+    margin-left: 15%;
+    margin-top: 10%;
+    padding-bottom: 3rem;
+}
+
+.desUpload {
+    font-family: 'DM Mono';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23.3241px;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btn-connect {
+    padding-top: 3em;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.title-TopCreators {
+    display: inline-block;
     font-family: 'Sniglet';
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 35.1737px;
+    line-height: 44px;
+    color: #406CA1;
+    margin-left: 8%;
+    padding-top: 56px;
+}
+
+.list-TopCreators {
+    margin-left: 9%;
+    list-style: none;
+    width: 86%;
+    padding-left: 0;
+}
+
+.btn-watchMore {
+    margin-top: 13%;
+    margin-left: 20%;
+    margin-bottom: 27%;
+}
+
+.CreateNewNFT {
+    width: 75%;
+    margin-top: 60px;
+    display: inline-block;
+}
+
+.NewTitle {
+    font-family: 'Sniglet';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6vw;
     line-height: 62px;
     color: #FFFFFF;
-    margin: 30px auto;
+    margin: 4vw auto;
+    text-align: center;
 }
 
 .tLabel {
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 400;
-    font-size: 25.1042px;
+    font-size: 2vw;
     line-height: 20px;
     /* or 80% */
-    padding: 40px;
+    padding: 3%;
     letter-spacing: 0.753125px;
     display: inline-block;
     color: #002B5B;
-    width: 70px;
-
+    width: 5%;
+    margin-left: 14%;
 }
 
 .imagePreview {
@@ -42,22 +163,22 @@ input {
     align-items: center;
     padding: 18.5904px 14.8723px;
     gap: 14.87px;
-    width: 525.18px;
-    height: 60.18px;
+    width: 35vw;
+    height: 5vw;
     background: #EDFBFF;
     /* Grayscale/Line */
-    margin: 20px;
+    margin: 2vw;
     border: 0.929521px solid #353242;
     border-radius: 5px;
     color: rgb(28, 8, 85);
-    font-size: 20px;
+    font-size: 2vw;
     font-family: monospace;
     outline: none;
 }
 
 .error {
     color: red;
-    font-size: 20px;
+    font-size: 2vw;
     font-family: monospace;
 }
 
@@ -73,11 +194,12 @@ input {
 
 .imgFrame {
     box-sizing: border-box;
-    width: 543.25px;
-    height: 386.68px;
-    margin: 30px auto;
+    width: 45%;
+    height: 45%;
+    margin: 5% auto;
     background: rgba(241, 246, 251, 0.8);
-    border-radius: 4.32527px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 
@@ -85,16 +207,26 @@ input {
     justify-content: center;
     align-items: center;
     gap: 8px;
-    padding: 10px 20px;
-    width: 122.51px;
-    height: 50.21px;
+    width: 8vw;
+    height: 2vw;
+    padding: 1vw 2vw;
     background: #EDFBFF;
     border: 1px solid #353242;
     border-radius: 4px;
     color: red;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 1.5vw;
     cursor: pointer;
+    margin-left: 28%;
+    margin-bottom: 2%;
+    display: inline-block;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .folder-icon {
+        display: none;
+    }
 }
 
 #imageUploadInput {
