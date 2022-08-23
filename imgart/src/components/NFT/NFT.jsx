@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 
 const StyledP = styled.p`
   color: #ffffff;
-  font-family: DM Mono;
   font-style: normal;
   line-height: 13px;
   ${({ Fsize, PLeft, Display, Valign }) => {

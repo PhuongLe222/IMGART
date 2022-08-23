@@ -167,10 +167,10 @@ export const Header = () => {
           </div> 
           ) : (
           <Button 
-            Width={"10em"} 
-            Height={"3em"} 
-            FSize={"1vw"} 
-            FontFamily="Space Grotesk,sans-serif" 
+            Width={"7em"} 
+            Height={"2.2em"} 
+            FSize={"1.5vw"} 
+            FontFamily={"Sniglet"}
             onClick={SignIn}
           >
             Connect

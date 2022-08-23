@@ -167,7 +167,7 @@ const CreateNFT = () => {
                 )}
               </Field>
               <div className="buttons">
-                <Button Width={"12vw"} Height={"5vw"} FSize={"1.8vw"} Margin={"2% 23%"}FontFamily={"monospace"}>
+                <Button Width={"12vw"} Height={"5vw"} FSize={"1.8vw"} Margin={"2% 23%"} FontFamily={"Sniglet"}>
                   Create
                 </Button>
               </div>
