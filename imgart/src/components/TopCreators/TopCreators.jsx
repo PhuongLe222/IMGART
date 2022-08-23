@@ -24,7 +24,7 @@ export const TopCreator = ({ src, author, price }) => {
     <div className="top-creator">
       <img className="NFTs-image" src={src} alt="NFT"></img>
       <div className="right-block">
-        <P FSize={20} Display={"block"} Valign={"super"}>
+        <P FSize={16} Display={"block"} Valign={"super"}>
           {" "}
           {author}{" "}
         </P>
@@ -33,7 +33,7 @@ export const TopCreator = ({ src, author, price }) => {
           src="Ellipse 6.png"
           alt="price-icon"
         ></img>
-        <P FSize={15} Display={"inline"} Valign={"super"}>
+        <P FSize={13} Display={"inline"} Valign={"super"}>
           {" "}
           {price} ICX{" "}
         </P>

@@ -38,6 +38,7 @@
     margin-left: 7.5vw;
     color: #30384d;
     padding-top: 2vw;
+    font-family: "Sniglet";
 }
 
 .hr-line-us {
@@ -49,6 +50,7 @@
 .content-member {
     font-size: 2vw;
     margin: 3vw;
+    font-family: "DM+Mono";
 }
 
 .content-member li {
