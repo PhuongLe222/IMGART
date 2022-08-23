@@ -14,7 +14,7 @@ const HomePageStyle = styled.div`
 let NFTitem_Art = [
   {
     link: "productdetails",
-    src: "NFT1.png",
+    src: "image 4.svg",
     name: "Doodle",
     avt: "avt.png",
     author: "0x60...9B38",
@@ -22,7 +22,7 @@ let NFTitem_Art = [
   },
   {
     link: "productdetails",
-    src: "NFT1.png",
+    src: "image 4.svg",
     name: "Doodle",
     avt: "avt.png",
     author: "0x60...9B38",
@@ -30,7 +30,7 @@ let NFTitem_Art = [
   },
   {
     link: "productdetails",
-    src: "NFT1.png",
+    src: "image 4.svg",
     name: "Doodle",
     avt: "avt.png",
     author: "0x60...9B38",
@@ -38,7 +38,7 @@ let NFTitem_Art = [
   },
   {
     link: "productdetails",
-    src: "NFT1.png",
+    src: "image 4.svg",
     name: "Doodle",
     avt: "avt.png",
     author: "0x60...9B38",
@@ -46,7 +46,7 @@ let NFTitem_Art = [
   },
   {
     link: "productdetails",
-    src: "NFT1.png",
+    src: "image 4.svg",
     name: "Doodle",
     avt: "avt.png",
     author: "0x60...9B38",
@@ -54,7 +54,7 @@ let NFTitem_Art = [
   },
   {
     link: "productdetails",
-    src: "NFT1.png",
+    src: "image 4.svg",
     name: "Doodle",
     avt: "avt.png",
     author: "0x60...9B38",
