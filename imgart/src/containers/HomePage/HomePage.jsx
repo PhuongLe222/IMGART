@@ -13,7 +13,7 @@ const HomePageStyle = styled.div`
 
 let NFTitem_Art = [
   {
-    link: "product-detail",
+    link: "productdetails",
     src: "NFT1.png",
     name: "Doodle",
     avt: "avt.png",
@@ -21,7 +21,7 @@ let NFTitem_Art = [
     price: "8.0",
   },
   {
-    link: "product-detail",
+    link: "productdetails",
     src: "NFT1.png",
     name: "Doodle",
     avt: "avt.png",
@@ -29,7 +29,7 @@ let NFTitem_Art = [
     price: "8.0",
   },
   {
-    link: "product-detail",
+    link: "productdetails",
     src: "NFT1.png",
     name: "Doodle",
     avt: "avt.png",
@@ -37,7 +37,7 @@ let NFTitem_Art = [
     price: "8.0",
   },
   {
-    link: "product-detail",
+    link: "productdetails",
     src: "NFT1.png",
     name: "Doodle",
     avt: "avt.png",
@@ -45,7 +45,7 @@ let NFTitem_Art = [
     price: "8.0",
   },
   {
-    link: "product-detail",
+    link: "productdetails",
     src: "NFT1.png",
     name: "Doodle",
     avt: "avt.png",
@@ -53,7 +53,7 @@ let NFTitem_Art = [
     price: "8.0",
   },
   {
-    link: "product-detail",
+    link: "productdetails",
     src: "NFT1.png",
     name: "Doodle",
     avt: "avt.png",
@@ -67,7 +67,7 @@ const NFT_ART = () => {
       <div className="NFT-group">
         {NFTitem_Art.map((item) => (
           <NFT
-            link={item.src}
+            link={item.link}
             src={item.src}
             name={item.name}
             avt={item.avt}
