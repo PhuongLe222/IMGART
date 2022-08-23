@@ -1,4 +1,4 @@
-.container {
+.container-us {
     display: flex;
     margin-bottom: 4vw;
 }
@@ -40,7 +40,7 @@
     padding-top: 2vw;
 }
 
-.hr-line {
+.hr-line-us {
     width: 15vw;
     margin-top: 1vw;
     border: 1.5px solid black;

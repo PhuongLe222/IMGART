@@ -9,10 +9,15 @@ import { hashShortener } from "../../sdk/iconSDK";
 
 const ProductDetailsStyle = styled.div`
   background-color: #8bb6e0;
-  .container {
+  .container-1 {
     display: flow-root;
     margin-left: 5vw;
-    margin-top: 10vw;
+    margin-top: 8vw;
+  }
+  .container-2 {
+    display: flow-root;
+    margin-left: 5vw;
+    margin-top: 3vw;
   }
   .container-left {
     margin-top: 3vw;
@@ -41,11 +46,11 @@ const ProductDetailsStyle = styled.div`
     height: auto;
     /* height: 33vw; */
   }
-  // @media only screen and (min-width: 1200px) {
-  //   .product-detail {
-  //     height: 33vw;
-  //   }
-  // }
+  /* @media only screen and (min-width: 1200px) {
+    .product-detail {
+      height: 33vw;
+    }
+  } */
 
   .product-detail p {
     color: #30384d;
@@ -70,7 +75,7 @@ const ProductDetailsStyle = styled.div`
     padding-left: 10px;
     display: inline;
     vertical-align: middle;
-    width: 100%;
+    /* width: 100%; */
     width: 5vw;
     height: auto;
   }
@@ -119,21 +124,22 @@ const ProductDetailsStyle = styled.div`
     gap: 15px;
     margin: 27px;
     margin-bottom: 0px;
+    margin-top: 5vw;
   }
   @media only screen and (max-width: 992px) {
     .gird-container {
       grid-template-columns: repeat(1, 1fr);
     }
   }
-  // @media only screen and (min-width: 1300px) {
-  //   .gird-container {
-  //     margin-left: 6vw;
-  //   }
-  // }
+  /* @media only screen and (min-width: 1300px) {
+    .gird-container {
+      margin-left: 6vw;
+    }
+  } */
   .btn-watchmore {
     display: block;
     margin-bottom: 34px;
-    margin-left: 40vw;
+    margin-left: 37vw;
   }
   @media only screen and (max-width: 992px) {
     .btn-watchmore {
@@ -156,7 +162,7 @@ const ProductDetails = ({ src, name, author, avt, price }) => {
   return (
     <PrimaryLayout>
       <ProductDetailsStyle>
-        <div className="container">
+        <div className="container-1">
           <div className="container-left">
             <img className="image-NFT" src={src} alt="NFT"></img>
           </div>
@@ -198,7 +204,7 @@ const ProductDetails = ({ src, name, author, avt, price }) => {
         <div>
           <hr className="hr-line"></hr>
         </div>
-        <div className="container">
+        <div className="container-2">
           <p className="container-tittle">More from this user</p>
           <div className="gird-container">
             {" "}

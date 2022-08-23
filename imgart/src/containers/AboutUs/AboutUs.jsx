@@ -7,11 +7,11 @@ const AboutUs = () => {
     <PrimaryLayout>
       <div>
         <img className="img-logo" src="logo.png" alt="logo"></img>
-        <div className="container">
+        <div className="container-us">
           <div className="left-us">
             <div className="content">
               <div className="title-us">ABOUT US</div>
-              <hr className="hr-line"></hr>
+              <hr className="hr-line-us"></hr>
               <div className="content-member">
                 IMGART store was established with 4 members:
                 <li>Lê Thị Kim Phượng</li>
