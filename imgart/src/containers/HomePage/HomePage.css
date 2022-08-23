@@ -1,0 +1,169 @@
+.content-container {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  grid-column-gap: 1.5%;
+}
+
+.contain-info {
+  display: grid;
+  width: 55%;
+  height: 90%;
+
+  margin-left: 28%;
+  margin-top: 10%;
+}
+
+.contain-title {
+  width: 135%
+    /*600px*/
+  ;
+  height: 80%
+    /*329px; */
+  ;
+  left: 15%;
+  font-family: "Space Grotesk", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 6vw;
+  line-height: 100%;
+  color: white;
+}
+
+.contain-des {
+  width: 145%
+    /*600px*/
+  ;
+  left: 15%;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.7vw;
+  line-height: 45px;
+  color: #e5e5e5;
+}
+
+.contain-image {
+  /* float: right;
+  width: 555vw; */
+  margin-top: 3%;
+  width: 70%;
+  height: 500px;
+  background: url("devera.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.logo-group {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 32px;
+  margin-left: 40%;
+  margin-bottom: -5px;
+}
+
+.content-container-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  border-top: 1px solid #30384D;
+}
+
+.content-title {
+  width: 220px;
+  height: 41px;
+  margin-left: 10%;
+  font-weight: 500;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41px;
+  color: #406CA1;
+  ;
+  margin-bottom: 5px;
+}
+
+.select-btn-list {
+  /* display: flex;  
+    align-items: center;
+    margin-left: 14.5%; 
+    margin-bottom: 2%; 
+   */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 145px);
+  grid-template-rows: repeat(2, 50px);
+  align-items: center;
+  margin-left: 15%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+
+}
+
+.NFT-group {
+  /* display: grid;
+    grid-template-columns: 380px 380px 380px;    
+    row-gap: 0.5px;
+    margin-left: 16%; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: repeat(2, 450px);
+  margin-left: 12%;
+
+}
+
+.page-btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 30px;
+}
+
+.page-btn-item {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #406CA1;
+  ;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-btn-item i {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.page-btn-item span {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  user-select: none;
+  cursor: pointer;
+}
+
+.page-btn-item.active {
+  background-color: #406CA1;
+  pointer-events: none;
+}
+
+.page-btn-item.active span {
+  color: #EBEDFF;
+}
+
+.page-btn-item:hover {
+  background-color: #406CA1;
+}
+
+.page-btn-item:hover span,
+.page-btn-item:hover i {
+  color: #EBEDFF;
+}

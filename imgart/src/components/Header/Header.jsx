@@ -8,6 +8,7 @@ import { UserOutlined, LogoutOutlined, ShopOutlined} from "@ant-design/icons";
 import { Link } from "react-router-dom";
 import { connectWallet, hashShortener, disConnect } from "../../sdk/iconSDK.js";
 
+
 const HeaderStyle = styled.div`
 
   header {
@@ -19,17 +20,17 @@ const HeaderStyle = styled.div`
   .main-header {
     position: absolute;
     width: 100%;
-    height: auto; /* 102.23px */
+    height: 6.65vw; /* 102.23px */
     left: 0%;
     top: -0.32vw; /* -5px */
     background: #406ca1;
   }
   .header-logo {
     position: absolute;
-    width: 10vw; /* 145.83px */
-    height: 19vh; /* 137.56px */
-    left: 4%; /* 37.58px */
-    top: -7%; /* -15.03px */
+    width: 10%; /* 145.83px */
+    height: 130%; /* 137.56px */
+    left: 2%; /* 37.58px */
+    top: -5%; /* -15.03px */
   }
   .header-list {
     display: flex;
@@ -52,8 +53,8 @@ const HeaderStyle = styled.div`
     cursor: pointer;
   }
   .search-input {
-    width: 25vw; /* 419.54px */
-    height: 5vh; /* 41.34px */
+    width: 20vw; /* 419.54px */
+    height: 1.3vw; /* 41.34px */
     border: 0.065vw solid #002b5b; /* 1px */
     border-radius: 3px; /* 3px */
     background-color: transparent;
@@ -61,17 +62,22 @@ const HeaderStyle = styled.div`
     background-size: 3%; /* 17px */
     background-position: 97% 50%; /* 400px 12px */
     margin-left: 6%;
+    vertical-align: middle;
+    padding: 1em 1em;
+    outline: none;
+    font-sixe: 3vw;
   }
   .search-input::placeholder {
-    padding-left: 0.45vw; /* 7px */
+    padding-left: 0.5vw; /* 7px */
     color: #e5e5e5;
     font-size: 0.8vw;
+    vertical-align: super;
   }
   #userAvatar {
     background-color: #f9e7de;
     border-radius: 50%;
     color: #cc5252;
-    padding: 5px 10px;
+    padding: 0.3vw 0.8vw;
   }
 
   @media screen and (max-width: 1130px) {
@@ -133,12 +139,17 @@ export const Header = () => {
         <Link id="Home" to="/" style={{display:"none"}}>Home</Link>
         <img className="header-logo" src="Logo.png" alt="Logo store" onClick={goHome}></img>
         <ul className="header-list">
-            <Link className="header-list-item" to="/create" style={{textDecoration:"none"}}>Create NFT</Link>
-            <Link className="header-list-item" to="/about-us" style={{textDecoration:"none"}}>About us </Link>
+          <Link className="header-list-item" to="/create" style={{textDecoration:"none"}}>Create NFT</Link>
+          <Link className="header-list-item" to="/about-us" style={{textDecoration:"none"}}>About us </Link>
         </ul>
-        <input className="search-input" placeholder="Search"></input>
+        <input className="search-input" placeholder="Search" onKeyPress={(event) => {
+    if (event.key === "Enter") {
+      window.alert("search: " + event.target.value);
+      event.target.value = "";
+    }
+  }}></input>
         {address ? (
-          <div onClick={onChange} className="user" style={isOpen?({marginTop: "7vw"}):({marginTop: "0px"})}>   
+          <div onClick={onChange} className="user" style={isOpen?({marginTop: "15vh"}):({marginTop: "0px"})}>   
             <Avatar id="userAvatar" size={60} icon={<UserOutlined />}/>        
             <span className="userAddress" style={{ marginLeft: 10, fontSize: 20, color: "#f3b95f" }}>
               {hashShortener(address)}
@@ -156,9 +167,9 @@ export const Header = () => {
           </div> 
           ) : (
           <Button 
-            Width={"10vw"} 
-            Height={"3vw"} 
-            FontSize={"6vw"} 
+            Width={"10em"} 
+            Height={"3em"} 
+            FSize={"1vw"} 
             FontFamily="Space Grotesk,sans-serif" 
             onClick={SignIn}
           >

@@ -22,7 +22,7 @@ const P = ({ children, FSize, Display, Valign }) => {
 export const TopCreator = ({ src, author, price }) => {
   return (
     <div className="top-creator">
-      <img className="NFT-image" src={src} alt="NFT"></img>
+      <img className="NFTs-image" src={src} alt="NFT"></img>
       <div className="right-block">
         <P FSize={20} Display={"block"} Valign={"super"}>
           {" "}

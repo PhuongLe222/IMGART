@@ -139,7 +139,7 @@ const CreateNFT = () => {
                       )}
                     </div>
                     <div className="imgUpload">
-                      <input type="file" id="imageUploadInput" accept=".jpg,.png" onChange={changeHandler}></input>
+                      <input className="form-input" type="file" id="imageUploadInput" accept=".jpg,.png" onChange={changeHandler}></input>
                       <span id="imageUploadInputBtn" onClick={LoadImg}>
                       <FiFolder className="folder-icon" style={{verticalAlign: "top", marginRight: "10px"}}/>
                       Update
@@ -152,7 +152,7 @@ const CreateNFT = () => {
                 {({ input, meta }) => (
                   <div>
                     <label className="tLabel">Name</label>
-                    <input {...input} type="text" placeholder="Name" />
+                    <input {...input} className="form-input" type="text" placeholder="Name" />
                     {meta.error && meta.touched && <span className="error">{meta.error}</span>}
                   </div>
                 )}
@@ -161,7 +161,7 @@ const CreateNFT = () => {
                 {({ input, meta }) => (
                   <div>
                     <label className="tLabel">Price</label>
-                    <input {...input} type="number" placeholder="Price" />
+                    <input {...input} className="form-input" type="number" placeholder="Price" />
                     {meta.error && meta.touched && <span className="error">{meta.error}</span>}
                   </div>
                 )}
@@ -190,11 +190,11 @@ const CreateNFT = () => {
             </ul>
             <div className="btn-watchMore">
               <Button
-                Height={"6vw"}
-                Width={"20vw"}
+                Height={"61px"}
+                Width={"240px"}
                 FSize={"25px"}
                 FontFamily={"Sniglet"}
-                Margin={"0 auto"}
+                Margin={"2vw auto"}
               >
                 Watch More
               </Button>
