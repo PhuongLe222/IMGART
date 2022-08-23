@@ -10,17 +10,15 @@ const StyledButton = styled.button`
   }
 
 
-  ${({ Height, Width, Margin, FontFamily, FSize, lineHeight, FWeight }) => {
+  ${({ Height, Width, Margin, FontFamily, FSize, bgColor, FWeight }) => {
 
     return `
         height: ${Height};
         width: ${Width};
         margin: ${Margin};
         font-family: ${FontFamily};
-
-
-        font-size: ${FontSize};
-        background-color: ${bgColor}
+        font-size: ${FSize};
+        background-color: ${bgColor};
   `;
   }};
 `;
