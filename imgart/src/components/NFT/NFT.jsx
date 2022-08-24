@@ -1,6 +1,8 @@
 import styled from "styled-components/macro";
 import "./NFT.css";
 import { Link } from "react-router-dom";
+import avatar from "../../asset/avt.png";
+import NFTpicture from "../../asset/image 4.svg";
 
 const StyledP = styled.p`
   color: #ffffff;

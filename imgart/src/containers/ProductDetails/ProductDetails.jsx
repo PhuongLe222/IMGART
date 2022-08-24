@@ -4,8 +4,10 @@ import { Button } from "../../components/Button/Button";
 import { NFT } from "../../components/NFT/NFT";
 import { PrimaryLayout } from "../../components/Layout";
 import { transfer } from "../../sdk/iconSDK";
-import { Builder } from "icon-sdk-js";
 import { hashShortener } from "../../sdk/iconSDK";
+import NFTpicture from "../../asset/image 4.svg";
+import avatar from "../../asset/avt.png";
+import NFTpicture1 from "../../asset/NFTpicture1.png";
 
 const ProductDetailsStyle = styled.div`
   background-color: #8bb6e0;
@@ -209,27 +211,27 @@ const ProductDetails = ({ src, name, author, avt, price }) => {
           <div className="gird-container">
             {" "}
             <NFT
-              src={"image.png"}
+              src={NFTpicture1}
               name={"Crazy Apes"}
-              avt={"avt.png"}
+              avt={avatar}
               author={hashShortener(
                 "hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"
               )}
               price={"3.90"}
             ></NFT>{" "}
             <NFT
-              src={"image.png"}
+              src={NFTpicture1}
               name={"Crazy Apes"}
-              avt={"avt.png"}
+              avt={avatar}
               author={hashShortener(
                 "hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"
               )}
               price={"3.90"}
             ></NFT>{" "}
             <NFT
-              src={"image.png"}
+              src={NFTpicture1}
               name={"Crazy Apes"}
-              avt={"avt.png"}
+              avt={avatar}
               author={hashShortener(
                 "hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"
               )}

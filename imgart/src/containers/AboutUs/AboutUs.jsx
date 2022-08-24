@@ -1,6 +1,7 @@
 import React from "react";
 import { PrimaryLayout } from "../../components/Layout";
 import "../AboutUs/AboutUs.css";
+import aboutus from "../../asset/aboutus.jpg";
 
 const AboutUs = () => {
   return (
@@ -33,7 +34,7 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="right-us">
-            <img className="img-us" src="aboutus.jpg" alt="us"></img>
+            <img className="img-us" src={aboutus} alt="us"></img>
           </div>
         </div>
       </div>

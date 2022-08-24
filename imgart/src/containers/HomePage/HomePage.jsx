@@ -5,6 +5,8 @@ import { Button } from "../../components/Button";
 import { NFT } from "../../components/NFT/NFT";
 import { PrimaryLayout } from "../../components/Layout/Layout";
 import { hashShortener } from "../../sdk/iconSDK";
+import avatar from "../../asset/avt.png";
+import NFTpicture from "../../asset/image 4.svg";
 
 const HomePageStyle = styled.div`
   display: flex;
@@ -15,49 +17,49 @@ const HomePageStyle = styled.div`
 let NFTitem_Art = [
   {
     link: "productdetails",
-    src: "image 4.svg",
+    src: NFTpicture,
     name: "Doodle",
-    avt: "avt.png",
+    avt: avatar,
     author: hashShortener("hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"),
     price: "8.2",
   },
   {
     link: "productdetails",
-    src: "image 4.svg",
+    src: NFTpicture,
     name: "Doodle",
-    avt: "avt.png",
+    avt: avatar,
     author: hashShortener("hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"),
     price: "8.2",
   },
   {
     link: "productdetails",
-    src: "image 4.svg",
+    src: NFTpicture,
     name: "Doodle",
-    avt: "avt.png",
+    avt: avatar,
     author: hashShortener("hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"),
     price: "8.2",
   },
   {
     link: "productdetails",
-    src: "image 4.svg",
+    src: NFTpicture,
     name: "Doodle",
-    avt: "avt.png",
+    avt: avatar,
     author: hashShortener("hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"),
     price: "8.2",
   },
   {
     link: "productdetails",
-    src: "image 4.svg",
+    src: NFTpicture,
     name: "Doodle",
-    avt: "avt.png",
+    avt: avatar,
     author: "0x60...9B38",
     price: "8.2",
   },
   {
     link: "productdetails",
-    src: "image 4.svg",
+    src: NFTpicture,
     name: "Doodle",
-    avt: "avt.png",
+    avt: avatar,
     author: hashShortener("hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"),
     price: "8.2",
   },
