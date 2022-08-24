@@ -80,6 +80,7 @@ const CreateNFT = () => {
     } else {
       window.alert("You must be connected to your wallet before");
     }
+    window.scrollTo(0, 0);
   };
   return (
     <PrimaryLayout>
