@@ -19,7 +19,6 @@ export const NETWORKS = {
   },
 };
 const ADDRESS = 'address';
-const rawTransaction = 'rawTransaction';
 
 export const httpProvider = new HttpProvider(NETWORKS.sejong.endpoint);
 
@@ -127,7 +126,6 @@ export const signTx = async (transaction) => {
         if (type === 'RESPONSE_JSON-RPC') {
           resolve(payload);
           console.log('Done');
-          alert('Buy successfully')
         }
       },
       { once: true }

@@ -1,5 +1,7 @@
 import styled from "styled-components/macro";
 import "./TopCreators.css";
+import NFTpicture2 from "../../asset/image 3.png";
+
 const StyledP = styled.p`
   color: #ffffff;
   font-family: DM Mono;
@@ -30,7 +32,7 @@ export const TopCreator = ({ src, author, price }) => {
         </P>
         <img
           className="right-block__price-icon-img"
-          src="Ellipse 6.png"
+          src="Ellipse 6.svg"
           alt="price-icon"
         ></img>
         <P FSize={13} Display={"inline"} Valign={"super"}>
@@ -41,4 +43,3 @@ export const TopCreator = ({ src, author, price }) => {
     </div>
   );
 };
-

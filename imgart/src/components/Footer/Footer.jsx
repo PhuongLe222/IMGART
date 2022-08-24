@@ -45,6 +45,10 @@ const Footerstyle = styled.div`
   .logo-social-network {
     display: flex;
     gap: 16px;
+    width: 2vw;
+  }
+  .logo-social-network img {
+    width: 2vw;
   }
   .policy-title {
     font-family: "Space Grotesk";
@@ -84,9 +88,15 @@ export const Footer = () => {
               Amazing NFTs marketplace, Authentic and unique digital creation.
             </div>
             <div className="logo-social-network">
-              <img src="Ellipse 18.svg" alt="" />
-              <img src="Ellipse 19.svg" alt="" />
-              <img src="Ellipse 20.svg" alt="" />
+              <a href="https://www.facebook.com/thutrang.5631">
+                <img src="Ellipse 18.svg" alt="logo-facebook" />
+              </a>
+              <a href="https://github.com/PhuongLe222/IMGART">
+                <img src="logogit.png" alt="logo-git" />
+              </a>
+              <a href="https://mail.google.com/">
+                <img src="logogmail.png" alt="logo-gmail" />
+              </a>
             </div>
             <div className="extra-footer-item">
               Copyright 2022 ImgartStore, All right reserved.
