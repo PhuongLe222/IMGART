@@ -20,7 +20,7 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1049px) {
 
     .left {
         float: none;
@@ -118,6 +118,7 @@
 .btn-watchMore {
     margin: 4% auto;
     width: 240px;
+    padding-bottom: 5vh;
 }
 
 .CreateNewNFT {
@@ -225,7 +226,7 @@
     text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1049px) {
     .folder-icon {
         display: none;
     }
