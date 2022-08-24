@@ -61,7 +61,7 @@ const ProductDetailsStyle = styled.div`
     font-weight: 700;
     line-height: 102px;
     font-size: 6vw;
-    margin-left: 10vw;
+    margin-left: 15vw;
     display: inline;
     margin-bottom: 30px;
   }
@@ -212,21 +212,27 @@ const ProductDetails = ({ src, name, author, avt, price }) => {
               src={"image.png"}
               name={"Crazy Apes"}
               avt={"avt.png"}
-              author={"hx45...250e"}
+              author={hashShortener(
+                "hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"
+              )}
               price={"3.90"}
             ></NFT>{" "}
             <NFT
               src={"image.png"}
               name={"Crazy Apes"}
               avt={"avt.png"}
-              author={"hx45...250e"}
+              author={hashShortener(
+                "hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"
+              )}
               price={"3.90"}
             ></NFT>{" "}
             <NFT
               src={"image.png"}
               name={"Crazy Apes"}
               avt={"avt.png"}
-              author={"hx45...250e"}
+              author={hashShortener(
+                "hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"
+              )}
               price={"3.90"}
             ></NFT>{" "}
           </div>

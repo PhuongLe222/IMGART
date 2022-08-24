@@ -28,7 +28,7 @@ export const NFT = ({ src, name, avt, author, price, link }) => {
     <Link to={link ? link : ""}>
       <div className="NFT">
         <img className="NFT-image" src={src} alt="NFT"></img>
-        <img class="avatar" src={avt} alt="avatar"></img>
+        <img class="avatar" src={avt} alt="avatar" width={"50vw"}></img>
         <P FSize={18} PLeft={30} Display={"block"} Valign={"super"}>
           {name}
         </P>
@@ -37,7 +37,7 @@ export const NFT = ({ src, name, avt, author, price, link }) => {
           Created by {author}{" "}
         </P>
         <span>
-          <img class="logo-coin" src="Ellipse 6.png" alt="logo IconX"></img>
+          <img class="logo-coin" src="Ellipse 6.svg" alt="logo IconX"></img>
           <span>
             <P FSize={16} PLeft={0} Display={"inline"} Valign={"super"}>
               {" "}

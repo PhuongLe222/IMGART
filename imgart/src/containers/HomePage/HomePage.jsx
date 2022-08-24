@@ -4,6 +4,7 @@ import "./HomePage.css";
 import { Button } from "../../components/Button";
 import { NFT } from "../../components/NFT/NFT";
 import { PrimaryLayout } from "../../components/Layout/Layout";
+import { hashShortener } from "../../sdk/iconSDK";
 
 const HomePageStyle = styled.div`
   display: flex;
@@ -17,8 +18,32 @@ let NFTitem_Art = [
     src: "image 4.svg",
     name: "Doodle",
     avt: "avt.png",
-    author: "0x60...9B38",
-    price: "8.0",
+    author: hashShortener("hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"),
+    price: "8.2",
+  },
+  {
+    link: "productdetails",
+    src: "image 4.svg",
+    name: "Doodle",
+    avt: "avt.png",
+    author: hashShortener("hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"),
+    price: "8.2",
+  },
+  {
+    link: "productdetails",
+    src: "image 4.svg",
+    name: "Doodle",
+    avt: "avt.png",
+    author: hashShortener("hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"),
+    price: "8.2",
+  },
+  {
+    link: "productdetails",
+    src: "image 4.svg",
+    name: "Doodle",
+    avt: "avt.png",
+    author: hashShortener("hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"),
+    price: "8.2",
   },
   {
     link: "productdetails",
@@ -26,39 +51,15 @@ let NFTitem_Art = [
     name: "Doodle",
     avt: "avt.png",
     author: "0x60...9B38",
-    price: "8.0",
+    price: "8.2",
   },
   {
     link: "productdetails",
     src: "image 4.svg",
     name: "Doodle",
     avt: "avt.png",
-    author: "0x60...9B38",
-    price: "8.0",
-  },
-  {
-    link: "productdetails",
-    src: "image 4.svg",
-    name: "Doodle",
-    avt: "avt.png",
-    author: "0x60...9B38",
-    price: "8.0",
-  },
-  {
-    link: "productdetails",
-    src: "image 4.svg",
-    name: "Doodle",
-    avt: "avt.png",
-    author: "0x60...9B38",
-    price: "8.0",
-  },
-  {
-    link: "productdetails",
-    src: "image 4.svg",
-    name: "Doodle",
-    avt: "avt.png",
-    author: "0x60...9B38",
-    price: "8.0",
+    author: hashShortener("hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"),
+    price: "8.2",
   },
 ];
 const NFT_ART = () => {

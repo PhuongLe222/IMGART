@@ -8,7 +8,7 @@ function App() {
   return (
     <Routes>
       <Route path='/create' element={<CreateNFT  />} />
-      <Route path='/productdetails' element={<ProductDetails src = {"image 4.svg"} name ={"Crazy Apes"} author ={"hx25178aea97711c063d5501820c9713db263e1b12"} avt={"avt.png"} price={"1.2"} />} />
+      <Route path='/productdetails' element={<ProductDetails src = {"image 4.svg"} name ={"Doodle"} author ={"hxaa0e47b35e3a2ed1321bc0c847f7404086ff75f1"} avt={"avt.png"} price={"8.2"} />} />
       <Route path='/about-us' element={<Aboutus/>}/>
       <Route path='/' element={<HomePage></HomePage>}></Route>
     </Routes>
